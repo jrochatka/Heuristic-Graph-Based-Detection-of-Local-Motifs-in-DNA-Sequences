@@ -21,3 +21,10 @@ The output contains:
 The program was tested with different confidence thresholds and k-mer lengths to analyze their impact on graph structure and motif detection results.
 
 The heuristic is fully graph-based and does not use biological sequence information during the clique search stage.
+
+## Usage
+
+```bash
+c++ 'AKwB 2.cpp' -o ./a.out
+./a.out
+```
