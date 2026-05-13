@@ -62,13 +62,13 @@ vector<vector <Kmer*>> kmer_matrix;
 vector <Kmer*> spectrum;
 
 void load_nucleo(const string& filename) {
-	fstream fastaFile(filename + ".fasta");
+	fstream fastaFile(string("data/") + filename + ".fasta");
 	if (!fastaFile.is_open()) {
 		cout << "Nie mozna otworzyc pliku " << filename << endl;
 		return;
 	}
 
-	fstream qualFile(filename + ".qual");
+	fstream qualFile(string("data/") + filename + ".qual");
 	if (!qualFile.is_open()) {
 		cout << "Nie mozna otworzyc pliku " << filename << endl;
 		return;
