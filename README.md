@@ -24,7 +24,13 @@ The heuristic is fully graph-based and does not use biological sequence informat
 
 ## Usage
 
+To build the project
+
 ```bash
-c++ 'AKwB 2.cpp' -o ./a.out
-./a.out
+make
+```
+To build and run the project:
+
+```bash
+make run
 ```
